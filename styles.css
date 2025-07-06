@@ -2,10 +2,10 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Segoe UI', Arial, sans-serif;
-  /* Unique, soft gradient background */
-  background: linear-gradient(135deg, #e0e7ff 0%, #fdf6e3 100%);
+  /* Dark theme gradient background */
+  background: linear-gradient(135deg, #181c24 0%, #232946 100%);
   min-height: 100vh;
-  color: #222;
+  color: #f3f4f6;
   position: relative;
   overflow-x: hidden;
 }
@@ -18,7 +18,7 @@ body::before {
   left: -100px;
   width: 120vw;
   height: 120vh;
-  background: radial-gradient(circle at 20% 30%, #a5b4fc33 0%, transparent 60%),
+  background: radial-gradient(circle at 20% 30%, #3b82f633 0%, transparent 60%),
               radial-gradient(circle at 80% 70%, #fbbf2433 0%, transparent 60%),
               radial-gradient(circle at 60% 10%, #f472b633 0%, transparent 60%);
   z-index: 0;
@@ -26,43 +26,114 @@ body::before {
 }
 
 .container {
-  max-width: 700px;
+  max-width: 950px;
+  width: 100%;
   margin: 40px auto;
-  padding: 32px 24px;
-  background: #fff;
+  padding: 32px 36px;
+  background: #232946;
   border-radius: 12px;
-  box-shadow: 0 2px 16px rgba(0,0,0,0.06);
+  box-shadow: 0 2px 16px rgba(0,0,0,0.18);
   position: relative;
   z-index: 1;
+}
+
+.header-section {
+  display: unset;
+  grid-template-columns: unset;
+  gap: unset;
+  margin-bottom: unset;
+}
+
+.personal-info {
+  width: 100%;
+  margin-bottom: 32px;
+}
+
+.skills-section {
+  grid-column: 2;
+}
+
+.skills-section h3 {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  color: #a5b4fc;
+}
+
+.skills-category {
+  margin-bottom: 20px;
+}
+
+.skills-category h4 {
+  margin: 0 0 12px 0;
+  font-size: 0.95rem;
+  color: #a5b4fc;
+  font-weight: 600;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+}
+
+.skill-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  background: #f8fafc;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+  transition: all 0.2s ease;
+}
+
+.skill-item:hover {
+  background: #f0f9ff;
+  border-color: #0ea5e9;
+  transform: translateY(-1px);
+}
+
+.skill-emoji {
+  font-size: 1.2rem;
+}
+
+.skill-name {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #374151;
 }
 
 h1 {
   font-size: 2.5rem;
   margin-bottom: 0.2em;
+  color: #f3f4f6;
 }
 h2 {
   font-size: 1.3rem;
   font-weight: 400;
-  color: #666;
+  color: #b8c1ec;
   margin-top: 0;
 }
 h3 {
   margin-top: 2em;
   font-size: 1.1rem;
   letter-spacing: 1px;
-  color: #2d6cdf;
+  color: #a5b4fc;
 }
 .bio {
   margin: 1em 0 0.5em 0;
-  color: #444;
+  color: #e0e7ef;
 }
 .contact-links a {
-  color: #2d6cdf;
+  color: #a5b4fc;
   text-decoration: none;
   margin-right: 0.5em;
 }
 .contact-links a:hover {
   text-decoration: underline;
+  color: #fbbf24;
 }
 ul {
   list-style: none;
@@ -77,8 +148,8 @@ section {
 }
 
 .present-experience {
-  background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
-  border-left: 4px solid #0ea5e9;
+  background: linear-gradient(135deg, #232946 60%, #393e5c 100%);
+  border-left: 4px solid #fbbf24;
   padding: 16px;
   border-radius: 8px;
   margin: 16px 0;
@@ -86,7 +157,7 @@ section {
 }
 
 .present-experience strong {
-  color: #0ea5e9;
+  color: #fbbf24;
 }
 
 .location {
@@ -107,7 +178,7 @@ section {
 }
 
 .project-card {
-  background: #fff;
+  background: #232946;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
   overflow: hidden;
@@ -140,31 +211,31 @@ section {
 
 .project-content h4 {
   margin: 0 0 12px 0;
-  color: #2d6cdf;
+  color: #fbbf24;
   font-size: 1.1rem;
 }
 
 .project-content p {
   margin: 0 0 16px 0;
-  color: #555;
+  color: #e0e7ef;
   line-height: 1.6;
   font-size: 0.95rem;
 }
 
 .project-links a {
-  color: #2d6cdf;
+  color: #fbbf24;
   text-decoration: none;
   font-weight: 500;
   font-size: 0.9rem;
   padding: 8px 16px;
-  border: 1px solid #2d6cdf;
+  border: 1px solid #fbbf24;
   border-radius: 6px;
   transition: all 0.2s ease;
 }
 
 .project-links a:hover {
-  background: #2d6cdf;
-  color: #fff;
+  background: #fbbf24;
+  color: #232946;
 }
 
 .project-period {
@@ -186,7 +257,7 @@ section {
   position: relative;
   font-size: 0.9rem;
   line-height: 1.5;
-  color: #555;
+  color: #e0e7ef;
 }
 
 .project-achievements li:before {
@@ -204,4 +275,112 @@ section {
   h1 {
     font-size: 2rem;
   }
+  .header-section {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 6px;
+  }
+  .skill-item {
+    padding: 4px 6px;
+  }
+  .skill-name {
+    font-size: 0.75rem;
+  }
+  .skills-category h4 {
+    font-size: 0.9rem;
+  }
+}
+
+.page-layout {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  min-height: 100vh;
+  gap: 32px;
+}
+
+.skills-sidebar {
+  min-width: 260px;
+  max-width: 300px;
+  background: rgba(35,41,70,0.95);
+  border-radius: 16px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.04);
+  padding: 32px 18px;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  position: sticky;
+  top: 32px;
+  height: fit-content;
+  max-height: 80vh;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #b4b4b4 #f0f0f0;
+}
+
+.skills-sidebar::-webkit-scrollbar {
+  width: 8px;
+}
+.skills-sidebar::-webkit-scrollbar-thumb {
+  background: #b4b4b4;
+  border-radius: 8px;
+}
+.skills-sidebar::-webkit-scrollbar-track {
+  background: #f0f0f0;
+  border-radius: 8px;
+}
+
+@media (max-width: 1000px) {
+  .page-layout {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+  }
+  .skills-sidebar {
+    max-width: 100%;
+    min-width: 0;
+    margin: 0 0 24px 0;
+    position: static;
+    top: unset;
+  }
+}
+
+@media (max-width: 1300px) {
+  .container {
+    max-width: 98vw;
+    padding: 24px 8px;
+  }
+  .skills-sidebar {
+    margin-left: 0;
+  }
+}
+
+.scroll-cue {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 32px 0 0 0;
+  cursor: pointer;
+  color: #fbbf24;
+  font-weight: 700;
+  font-size: 1.45rem;
+  opacity: 0.95;
+  transition: opacity 0.2s;
+  text-shadow: 0 2px 8px #181c24;
+}
+.scroll-cue:hover {
+  opacity: 1;
+}
+.down-arrow {
+  font-size: 3rem;
+  margin-top: 8px;
+  animation: bounceDown 1.2s infinite;
+  color: #fbbf24;
+  text-shadow: 0 2px 8px #181c24;
+}
+@keyframes bounceDown {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(12px); }
 } 

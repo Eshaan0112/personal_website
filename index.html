@@ -7,135 +7,192 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <main class="container">
-    <section class="personal-info">
-      <h1>Eshaan Minocha</h1>
-      <h2>Machine Learning Engineer</h2>
-      <p class="bio">I'm experienced in developing and deploying ML algorithms (Bayesian models, Ensemble Learning, etc.), Time Series Forecasting (Univariate and Multivariate) models and Optimization (Gurobi, HiGHs for MiLPs) models. I'm a trained SWE which helps me write scalable and production-ready code.</p>
-      <div class="contact-links">
-        <a href="mailto:eshaanminocha0112@gmail.com">Email</a> |
-        <a href="https://www.linkedin.com/in/eshaan-minocha-656296195/">LinkedIn</a> |
-        <a href="https://github.com/Eshaan0112/">GitHub</a>
-      </div>
-    </section>
-    <section class="experience">
-      <h3>Experience</h3>
-      <ul>
-        <li class="present-experience">
-          <strong>Data Scientist @ The Goodyear Tire and Rubber Company</strong><br>
-          <span class="location">Akron, OH</span> • <span class="date">June 2024 - Present</span><br>
-          <span>As a Data Scientist at The Goodyear Tire and Rubber Company, I developed scalable machine learning pipelines and integrated uncertainty quantification techniques, enhancing model reliability and predictive performance. I led cost-saving initiatives by replacing proprietary optimization tools with open-source solvers, reducing annual expenses by $40K. My work on Gaussian Processes and multivariate time series modeling significantly improved inference efficiency and forecasting accuracy, supporting strategic demand planning and operational decision-making.</span>
-        </li>
-        <li>
-          <strong>Data Science Intern @ The Goodyear Tire and Rubber Company</strong><br>
-          <span class="location">Akron, OH</span> • <span class="date">May 2022 - Aug 2023</span><br>
-          <span>As a Data Scientist Intern, I migrated ML applications to the cloud, reducing downtime to just 0.1%. I managed and optimized AWS DynamoDB databases for efficient ML payload storage and retrieval, cutting query complexity by 50% through smart schema design. Additionally, I benchmarked outlier detection techniques to automate anomaly detection in ML pipelines, enhancing system reliability. Include any relevant technologies, methodologies, or projects you worked on.</span>
-        </li>
-        <li>
-          <strong>Software Engineering Intern @ Hughes Network Systems</strong><br>
-          <span class="location">Gaithersburg, MD</span> • <span class="date">May 2022 - Aug 2022</span><br>
-          <span>Built a low-latency real-time data streaming module using WebSockets (~1 ms latency) and optimized JSON structures for asynchronous backend communication. Deployed an Express-based REST API powering real-time analytics dashboards for system performance monitoring.</span>
-        </li>
-        <!-- Add more experience items as needed -->
-      </ul>
-    </section>
-    <section class="projects">
-      <h3>Projects</h3>
-      <div class="project-grid">
-        <div class="project-card">
-          <div class="project-image">
-            <img src="images/gaussian-processes.jpg" alt="Gaussian Processes System" onerror="this.style.display='none'">
-          </div>
-          <div class="project-content">
-            <h4>Gaussian Processes & Bayesian Optimization</h4>
-            <p>Full-stack system for generating predictions using Gaussian Processes and performing Bayesian Optimization to optimize material features. Implemented advanced ML techniques for material science applications.</p>
-            <div class="project-links">
-              <a href="https://github.com/Eshaan0112/gaussian_processes" target="_blank">View Project</a>
-            </div>
+  <div class="page-layout">
+    <aside class="skills-sidebar">
+      <div class="skills-section">
+        <h3>Skills</h3>
+        <div class="skills-category">
+          <h4>🛠️ Programming & Tools</h4>
+          <div class="skills-grid">
+            <div class="skill-item"><span class="skill-emoji">🐍</span><span class="skill-name">Python</span></div>
+            <div class="skill-item"><span class="skill-emoji">🗄️</span><span class="skill-name">SQL</span></div>
+            <div class="skill-item"><span class="skill-emoji">☕</span><span class="skill-name">Java</span></div>
+            <div class="skill-item"><span class="skill-emoji">⚙️</span><span class="skill-name">C</span></div>
+            <div class="skill-item"><span class="skill-emoji">💻</span><span class="skill-name">Bash</span></div>
+            <div class="skill-item"><span class="skill-emoji">📦</span><span class="skill-name">Git</span></div>
+            <div class="skill-item"><span class="skill-emoji">📚</span><span class="skill-name">Poetry</span></div>
+            <div class="skill-item"><span class="skill-emoji">🌊</span><span class="skill-name">Airflow</span></div>
+            <div class="skill-item"><span class="skill-emoji">❄️</span><span class="skill-name">Snowflake</span></div>
+            <div class="skill-item"><span class="skill-emoji">⚡</span><span class="skill-name">DASK</span></div>
+            <div class="skill-item"><span class="skill-emoji">🔮</span><span class="skill-name">Ray</span></div>
           </div>
         </div>
-
-        <div class="project-card">
-          <div class="project-image">
-            <img src="images/recommendation-engine.jpg" alt="Book Recommendation Engine" onerror="this.style.display='none'">
-          </div>
-          <div class="project-content">
-            <h4>The Subtle Art of Not Giving a Flix</h4>
-            <p>Full-stack recommendation engine for books. Built a sophisticated system that provides personalized book recommendations using advanced recommendation algorithms and user preference analysis.</p>
-            <div class="project-links">
-              <a href="https://github.com/Eshaan0112/the_subtle_art_of_not_giving_a_flix" target="_blank">View Project</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-image">
-            <img src="images/learning-to-reweight.jpg" alt="Learning to Reweight Examples" onerror="this.style.display='none'">
-          </div>
-          <div class="project-content">
-            <h4>Learning to Reweight Examples for Robust Deep Learning</h4>
-            <p class="project-period">Jan'23 - May'23</p>
-            <ul class="project-achievements">
-              <li>Tested vulnerabilities of Deep Neural Networks (DNNs) to training set biases and noisy labels</li>
-              <li>Improved accuracy of detection of outliers by 5% employing multiple activation functions</li>
-              <li>Successfully implemented the label detection trend from original paper with 60% accuracy</li>
-            </ul>
-            <div class="project-links">
-              <a href="https://github.com/Eshaan0112/learning-to-reweight-examples" target="_blank">View Project</a>
-            </div>
+        <div class="skills-category">
+          <h4>☁️ Cloud Technologies</h4>
+          <div class="skills-grid">
+            <div class="skill-item"><span class="skill-emoji">☁️</span><span class="skill-name">AWS</span></div>
+            <div class="skill-item"><span class="skill-emoji">🔧</span><span class="skill-name">Lambda</span></div>
+            <div class="skill-item"><span class="skill-emoji">🧠</span><span class="skill-name">Sagemaker</span></div>
+            <div class="skill-item"><span class="skill-emoji">📦</span><span class="skill-name">S3</span></div>
+            <div class="skill-item"><span class="skill-emoji">🔍</span><span class="skill-name">Athena</span></div>
+            <div class="skill-item"><span class="skill-emoji">🗃️</span><span class="skill-name">DynamoDB</span></div>
+            <div class="skill-item"><span class="skill-emoji">🌐</span><span class="skill-name">GCP</span></div>
           </div>
         </div>
-
-        <div class="project-card">
-          <div class="project-image">
-            <img src="images/trustworthy-registry.jpg" alt="Trustworthy Registry of Modules" onerror="this.style.display='none'">
-          </div>
-          <div class="project-content">
-            <h4>Trustworthy Registry of Modules</h4>
-            <p class="project-period">Jan'23 - May'23</p>
-            <ul class="project-achievements">
-              <li>Implemented a CLI which takes as input a registry of npm packages and returns their "trustworthiness"</li>
-              <li>Developed APIs using Typescript and Python for functionalities of "upload", "download" and "update"</li>
-              <li>Stored package modules on GCP Firebase and deployed the entire system</li>
-            </ul>
-            <div class="project-links">
-              <a href="#" target="_blank">View Project</a>
-            </div>
+        <div class="skills-category">
+          <h4>🤖 Machine Learning</h4>
+          <div class="skills-grid">
+            <div class="skill-item"><span class="skill-emoji">📊</span><span class="skill-name">Gaussian Processes</span></div>
+            <div class="skill-item"><span class="skill-emoji">🎯</span><span class="skill-name">Ensemble Learning</span></div>
+            <div class="skill-item"><span class="skill-emoji">🛡️</span><span class="skill-name">Conformal Inference</span></div>
+            <div class="skill-item"><span class="skill-emoji">⚡</span><span class="skill-name">Optimization</span></div>
+            <div class="skill-item"><span class="skill-emoji">📈</span><span class="skill-name">Time Series</span></div>
           </div>
         </div>
-
-        <div class="project-card">
-          <div class="project-image">
-            <img src="images/deep-image-prior.jpg" alt="Deep Image Prior" onerror="this.style.display='none'">
-          </div>
-          <div class="project-content">
-            <h4>Deep Image Prior</h4>
-            <p class="project-period">Sept'22 - Dec'22</p>
-            <ul class="project-achievements">
-              <li>Modified the architectures (CNN) for the "inpainting" experiments on different images using PyTorch</li>
-              <li>Replicated results of the "restoration" experiments with 40% accuracy</li>
-              <li>Evaluated the results on the modified model using unique machine learning techniques like GMM clustering</li>
-            </ul>
-            <div class="project-links">
-              <a href="https://github.com/Eshaan0112/deep-image-prior" target="_blank">View Project</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-image">
-            <img src="images/kaggle-competitions.jpg" alt="Kaggle Competitions" onerror="this.style.display='none'">
-          </div>
-          <div class="project-content">
-            <h4>Kaggle Competitions</h4>
-            <p>Collection of Jupyter notebooks from various Kaggle competitions. Demonstrates expertise in data science competitions, feature engineering, and model optimization across diverse datasets.</p>
-            <div class="project-links">
-              <a href="https://github.com/Eshaan0112/kaggle_competitions" target="_blank">View Project</a>
-            </div>
+        <div class="skills-category">
+          <h4>📚 Libraries & Frameworks</h4>
+          <div class="skills-grid">
+            <div class="skill-item"><span class="skill-emoji">🔥</span><span class="skill-name">PyTorch</span></div>
+            <div class="skill-item"><span class="skill-emoji">🏗️</span><span class="skill-name">Kedro</span></div>
+            <div class="skill-item"><span class="skill-emoji">📊</span><span class="skill-name">GPFlow</span></div>
+            <div class="skill-item"><span class="skill-emoji">🚀</span><span class="skill-name">XGBoost</span></div>
+            <div class="skill-item"><span class="skill-emoji">💡</span><span class="skill-name">LightGBM</span></div>
+            <div class="skill-item"><span class="skill-emoji">🎯</span><span class="skill-name">Pyomo</span></div>
+            <div class="skill-item"><span class="skill-emoji">⚡</span><span class="skill-name">FastAPI</span></div>
+            <div class="skill-item"><span class="skill-emoji">🐼</span><span class="skill-name">Pandas</span></div>
+            <div class="skill-item"><span class="skill-emoji">🔬</span><span class="skill-name">Scikit-Learn</span></div>
+            <div class="skill-item"><span class="skill-emoji">📊</span><span class="skill-name">Seaborn</span></div>
+            <div class="skill-item"><span class="skill-emoji">📈</span><span class="skill-name">Matplotlib</span></div>
+            <div class="skill-item"><span class="skill-emoji">📊</span><span class="skill-name">Plotly</span></div>
           </div>
         </div>
       </div>
-    </section>
-  </main>
+    </aside>
+    <main class="container">
+      <div class="personal-info">
+        <h1>Eshaan Minocha</h1>
+        <h2>Machine Learning Engineer</h2>
+        <p class="bio">
+          I am a passionate Machine Learning Engineer with a strong foundation in both software engineering and advanced data science. My expertise spans the end-to-end development and deployment of machine learning solutions, from designing robust data pipelines to building and optimizing predictive models for real-world impact.<br><br>
+          With hands-on experience at The Goodyear Tire and Rubber Company, I have led initiatives to enhance model reliability, integrate uncertainty quantification, and drive cost-saving innovations by leveraging open-source optimization tools. My work has directly contributed to improved forecasting accuracy, operational efficiency, and strategic decision-making in a Fortune 500 environment.<br><br>
+          I am skilled in a wide array of technologies, including Python, SQL, cloud platforms (AWS, GCP), and modern ML libraries such as PyTorch, XGBoost, and TensorFlow. My projects range from developing scalable machine learning pipelines and real-time data streaming modules to architecting trustworthy registries for software modules and benchmarking robust deep learning techniques.<br><br>
+          I thrive at the intersection of research and engineering, always seeking to bridge the gap between cutting-edge algorithms and scalable, production-ready systems. I am deeply interested in Bayesian modeling, time series forecasting, optimization, and the trustworthy deployment of AI in industry.<br><br>
+          Currently, I am open to full-time opportunities in Machine Learning, Data Science, or AI Engineering, and I am eager to collaborate on innovative projects that push the boundaries of what data-driven technology can achieve.
+        </p>
+        <div class="contact-links">
+          <a href="mailto:eshaanminocha0112@gmail.com">✉️ Email</a> |
+          <a href="https://www.linkedin.com/in/eshaan-minocha-656296195/">🔗 LinkedIn</a> |
+          <a href="https://github.com/Eshaan0112/">🐙 GitHub</a>
+        </div>
+      </div>
+      <div class="scroll-cue" onclick="document.getElementById('experience-section').scrollIntoView({behavior: 'smooth'});">
+        <span>Scroll for Projects & Experience</span>
+        <div class="down-arrow">&#8595;</div>
+      </div>
+      <section class="experience" id="experience-section">
+        <h3>Experience</h3>
+        <ul>
+          <li class="present-experience">
+            <strong>Data Scientist @ The Goodyear Tire and Rubber Company</strong><br>
+            <span class="location">Akron, OH</span> • <span class="date">June 2024 - Present</span><br>
+            <span>As a Data Scientist at The Goodyear Tire and Rubber Company, I developed scalable machine learning pipelines and integrated uncertainty quantification techniques, enhancing model reliability and predictive performance. I led cost-saving initiatives by replacing proprietary optimization tools with open-source solvers, reducing annual expenses by $40K. My work on Gaussian Processes and multivariate time series modeling significantly improved inference efficiency and forecasting accuracy, supporting strategic demand planning and operational decision-making.</span>
+          </li>
+          <li>
+            <strong>Data Science Intern @ The Goodyear Tire and Rubber Company</strong><br>
+            <span class="location">Akron, OH</span> • <span class="date">May 2022 - Aug 2023</span><br>
+            <span>As a Data Scientist Intern, I migrated ML applications to the cloud, reducing downtime to just 0.1%. I managed and optimized AWS DynamoDB databases for efficient ML payload storage and retrieval, cutting query complexity by 50% through smart schema design. Additionally, I benchmarked outlier detection techniques to automate anomaly detection in ML pipelines, enhancing system reliability. Include any relevant technologies, methodologies, or projects you worked on.</span>
+          </li>
+          <li>
+            <strong>Software Engineering Intern @ Hughes Network Systems</strong><br>
+            <span class="location">Gaithersburg, MD</span> • <span class="date">May 2022 - Aug 2022</span><br>
+            <span>Built a low-latency real-time data streaming module using WebSockets (~1 ms latency) and optimized JSON structures for asynchronous backend communication. Deployed an Express-based REST API powering real-time analytics dashboards for system performance monitoring.</span>
+          </li>
+          <!-- Add more experience items as needed -->
+        </ul>
+      </section>
+      <section class="projects">
+        <h3>Projects</h3>
+        <div class="project-grid">
+          <div class="project-card">
+            <div class="project-image">
+              <img src="images/gaussian-processes.jpg" alt="Gaussian Processes System" onerror="this.style.display='none'">
+            </div>
+            <div class="project-content">
+              <h4>Gaussian Processes & Bayesian Optimization</h4>
+              <p>Full-stack system for generating predictions using Gaussian Processes and performing Bayesian Optimization to optimize material features. Implemented advanced ML techniques for material science applications.</p>
+              <div class="project-links">
+                <a href="https://github.com/Eshaan0112/gaussian_processes" target="_blank">View Project</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-image">
+              <img src="images/recommendation-engine.jpg" alt="Book Recommendation Engine" onerror="this.style.display='none'">
+            </div>
+            <div class="project-content">
+              <h4>The Subtle Art of Not Giving a Flix</h4>
+              <p>Full-stack recommendation engine for books. Built a sophisticated system that provides personalized book recommendations using advanced recommendation algorithms and user preference analysis.</p>
+              <div class="project-links">
+                <a href="https://github.com/Eshaan0112/the_subtle_art_of_not_giving_a_flix" target="_blank">View Project</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-image">
+              <img src="images/learning-to-reweight.jpg" alt="Learning to Reweight Examples" onerror="this.style.display='none'">
+            </div>
+            <div class="project-content">
+              <h4>Learning to Reweight Examples for Robust Deep Learning</h4>
+              <p>Investigated the vulnerabilities of deep neural networks to training set biases and noisy labels, improving outlier detection accuracy by 5% and successfully replicating label detection trends from the original research. Implemented and evaluated robust learning techniques to enhance model reliability.</p>
+              <div class="project-links">
+                <a href="https://github.com/Eshaan0112/learning-to-reweight-examples" target="_blank">View Project</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-image">
+              <img src="images/trustworthy-registry.jpg" alt="Trustworthy Registry of Modules" onerror="this.style.display='none'">
+            </div>
+            <div class="project-content">
+              <h4>Trustworthy Registry of Modules</h4>
+              <p>Developed a CLI and API system to assess the trustworthiness of npm packages, with core functionalities for upload, download, and update. Leveraged TypeScript, Python, and GCP Firebase to build and deploy a secure, cloud-based registry for package management.</p>
+              <div class="project-links">
+                <a href="#" target="_blank">View Project</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-image">
+              <img src="images/deep-image-prior.jpg" alt="Deep Image Prior" onerror="this.style.display='none'">
+            </div>
+            <div class="project-content">
+              <h4>Deep Image Prior</h4>
+              <p>Modified convolutional neural network architectures for image inpainting and restoration using PyTorch, achieving 40% accuracy in restoration experiments. Applied advanced clustering and evaluation techniques to assess model performance on diverse image datasets.</p>
+              <div class="project-links">
+                <a href="https://github.com/Eshaan0112/deep-image-prior" target="_blank">View Project</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-image">
+              <img src="images/kaggle-competitions.jpg" alt="Kaggle Competitions" onerror="this.style.display='none'">
+            </div>
+            <div class="project-content">
+              <h4>Kaggle Competitions</h4>
+              <p>Collection of Jupyter notebooks from various Kaggle competitions. Demonstrates expertise in data science competitions, feature engineering, and model optimization across diverse datasets.</p>
+              <div class="project-links">
+                <a href="https://github.com/Eshaan0112/kaggle_competitions" target="_blank">View Project</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
 </body>
 </html> 
