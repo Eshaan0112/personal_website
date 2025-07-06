@@ -396,4 +396,137 @@ section {
   font-size: 1rem;
   box-shadow: none;
   letter-spacing: 0.01em;
+}
+
+.resume-section {
+  margin-top: 48px;
+  text-align: center;
+}
+.resume-section h3 {
+  color: #fbbf24;
+  margin-bottom: 12px;
+}
+.resume-link {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 12px 28px;
+  background: #fbbf24;
+  color: #232946;
+  font-weight: 600;
+  border-radius: 8px;
+  font-size: 1.08rem;
+  text-decoration: none;
+  box-shadow: 0 2px 8px #181c2433;
+  transition: background 0.2s, color 0.2s;
+}
+.resume-link:hover {
+  background: #f59e42;
+  color: #fff;
+}
+
+.top-section-flex {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 32px;
+  margin-bottom: 16px;
+}
+.contact-links-top {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  font-size: 1.08rem;
+  gap: 8px;
+  min-width: 220px;
+}
+@media (max-width: 800px) {
+  .top-section-flex {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+  }
+  .contact-links-top {
+    align-items: flex-start;
+    min-width: 0;
+    font-size: 1rem;
+  }
+}
+
+.open-to-opportunities-bar {
+  width: 100%;
+  background: rgba(251,191,36,0.10);
+  color: #fbbf24;
+  text-align: center;
+  font-size: 1.01rem;
+  font-weight: 500;
+  padding: 7px 0 5px 0;
+  border-radius: 8px;
+  margin-bottom: 18px;
+  letter-spacing: 0.01em;
+}
+.resume-contact-col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+  min-width: 220px;
+}
+.main-top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  margin-bottom: 8px;
+}
+.mini-resume-link {
+  padding: 6px 16px;
+  font-size: 0.98rem;
+  border-radius: 6px;
+  margin-bottom: 2px;
+  margin-top: 0;
+  background: #fbbf24;
+  color: #232946;
+  font-weight: 600;
+  box-shadow: none;
+  transition: background 0.2s, color 0.2s;
+  animation: bounceDown 1.2s infinite;
+}
+.mini-resume-link:hover {
+  background: #f59e42;
+  color: #fff;
+  animation: none;
+}
+@media (max-width: 800px) {
+  .resume-contact-col {
+    align-items: flex-start;
+    min-width: 0;
+  }
+}
+
+.inline-contact-links {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 18px;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.inline-contact-links a {
+  color: #a5b4fc;
+  text-decoration: none;
+  margin: 0 2px;
+  transition: color 0.2s;
+}
+.inline-contact-links a:hover {
+  color: #fbbf24;
+  text-decoration: underline;
+}
+@media (max-width: 600px) {
+  .inline-contact-links {
+    display: block;
+    margin-left: 0;
+    margin-top: 8px;
+    font-size: 0.98rem;
+  }
 } 
